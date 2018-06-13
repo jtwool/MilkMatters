@@ -20,6 +20,9 @@ Every Milk Matters program is facilitated by International Board Certified Lacta
   <link rel="stylesheet" href="css/skeleton.css">
   <style>
   body {color:white; font-family:serif;font-size:1.5em}
+  .igimg {margin-right:.75em; margin-left:.75em}
+  .igimg img {border-radius: 5px;}
+  .igimg img:hover {opacity: 0.65}
   .container {padding: 2em; border: 2px solid white; margin-top: 3em}
   h1,h2,h3,h4,h5,h6 {color:#2BFAE5}
   .row {background-color: #4A286A; padding: 1em; margin-bottom: 2em; border-radius:1em;}
@@ -33,6 +36,7 @@ Every Milk Matters program is facilitated by International Board Certified Lacta
   .gallery {text-align: center;}
   .navlinks {text-align: center}
   .navlinks strong a {margin-right:1em;}
+  #instafeed {text-align: center}
   </style>
 
   <!-- Favicon
@@ -143,12 +147,16 @@ Every Milk Matters program is facilitated by International Board Certified Lacta
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
  <script type="text/javascript" src="dates.js"></script>
-  <!-- <script type="text/javascript" src="instafeed.min.js"></script> -->
+  <script type="text/javascript" src="instafeed.min.js"></script>
   <script type="text/javascript">
     var feed = new Instafeed({
         get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'YOUR_CLIENT_ID'
+        tagName: 'mm',
+        sortBy: 'random',
+        limit: 5,
+        clientId: ' b95bbc7044ea4ab481ce04a5ded793a4',
+        accessToken: '4476807697.b95bbc7.10324c343bbc428d826efbae321ba372',
+        template: '<a class="igimg" href="{{link}}" target="_blank"><img src="{{image}}" /></a>'
     });
     feed.run();
   </script>
