@@ -78,10 +78,10 @@ next_four_evenings = evening_dates.filter(x=>x>today).slice(0,4)
 
 if (next_four_evenings[0] < next_four_mornings[0]){
   next_date = next_four_evenings[0]
-  next_loc= '<a href="https://goo.gl/maps/xEkWaSfFatR2" target="_blank">  Banneker Community Center</a> from 9:30am-11:30am'
+  next_loc = '<a href="https://goo.gl/maps/tQGhVUdfHuo" target="_blank">  City Hall in McCloskey Room 135</a> from 6:30pm-8pm'
 } else{
   next_date = next_four_mornings[0]
-  next_loc = '<a href="https://goo.gl/maps/tQGhVUdfHuo" target="_blank">  City Hall in McCloskey Room 135</a> from 6:30pm-8:00pm'
+  next_loc= '<a href="https://goo.gl/maps/xEkWaSfFatR2" target="_blank">  Banneker Community Center</a> from 9:30am-11:30am'
 }
 
 nds = next_date.toLocaleDateString("en-US",date_options)
