@@ -85,5 +85,13 @@ if (next_four_evenings[0] < next_four_mornings[0]){
 }
 
 nds = next_date.toLocaleDateString("en-US",date_options)
+
 document.getElementById("next_date").innerHTML = nds
 document.getElementById("next_loc").innerHTML = next_loc
+
+n4m = next_four_mornings.map(x=>"<li>"+ x.toLocaleDateString("en-US",date_options) + "</li>").join(" ")
+n4e = next_four_evenings.map(x=>"<li>"+ x.toLocaleDateString("en-US",date_options) + "</li>").join(" ")
+
+
+document.getElementById("next-four-morning").innerHTML = n4m
+document.getElementById("next-four-evening").innerHTML = n4e

@@ -38,16 +38,6 @@ Every Milk Matters program is facilitated by International Board Certified Lacta
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png"/>
   <!-- JS -->
-  <script type="text/javascript" src="dates.js"></script>
-  <script type="text/javascript" src="instafeed.min.js"></script>
-  <script type="text/javascript">
-    var feed = new Instafeed({
-        get: 'tagged',
-        tagName: 'awesome',
-        clientId: 'YOUR_CLIENT_ID'
-    });
-    feed.run();
-  </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-120818347-1"></script>
   <script>
@@ -97,19 +87,19 @@ Every Milk Matters program is facilitated by International Board Certified Lacta
         <div style="margin-left:10%;text-align:center;">
         <div style="float:left; margin-right:10%">
         <p><strong>The next 4 morning programs are:</strong><p>
-          <ul>
-            <li> June 27, 9:30-11:30am </li>
-            <li> July 11, 9:30-11:30am </li>
-            <li> July 25, 9:30-11:30am </li>
-            <li> August 8, 9:30-11:30am </li>
+          <ul id="next-four-morning">
+            <li>June 27</li>
+            <li>July 11</li>
+            <li>July 25</li>
+            <li>August 8</li>
           </ul> </div>
         <div>
         <p><strong>The next 4 evening programs are:</strong><p>
-          <ul>
-            <li> July 18, 6:30-8:00pm  </li>
-            <li> August 15, 6:30-8:00pm </li>
-            <li> September 19, 6:30-8:00pm</li>
-            <li> October 17, 6:30-8:00pm </li>
+          <ul id="next-four-evening">
+            <li>July 18</li>
+            <li>August 15</li>
+            <li>September 19</li>
+            <li>October 17</li>
           </ul></div>
           </div>
       </div>
@@ -150,4 +140,14 @@ Every Milk Matters program is facilitated by International Board Certified Lacta
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
+ <script type="text/javascript" src="dates.js"></script>
+  <!-- <script type="text/javascript" src="instafeed.min.js"></script> -->
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'YOUR_CLIENT_ID'
+    });
+    feed.run();
+  </script>
 </html>
