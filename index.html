@@ -14,10 +14,6 @@ Every Milk Matters program is facilitated by International Board Certified Lacta
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="stylesheet" href="css/normalize.css">
@@ -42,7 +38,8 @@ Every Milk Matters program is facilitated by International Board Certified Lacta
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="images/favicon.png"/>
   <!-- JS -->
-  <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+  <script type="text/javascript" src="dates.js"></script>
+  <script type="text/javascript" src="instafeed.min.js"></script>
   <script type="text/javascript">
     var feed = new Instafeed({
         get: 'tagged',
@@ -65,7 +62,7 @@ Every Milk Matters program is facilitated by International Board Certified Lacta
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="nextmm">The next <strong>Milk Matters</strong> will be on June 27th at the  <a href="https://goo.gl/maps/xEkWaSfFatR2" target="_blank"> Banneker Community Center</a>   from 9:30am-11:30am.
+  <div id="nextmm">The next <strong>Milk Matters</strong> will be on <span id="next_date">June 27th</span> at the  <span id="next_loc"><a href="https://goo.gl/maps/xEkWaSfFatR2" target="_blank"> Banneker Community Center</a> from 9:30am-11:30am</span>.
   
   </div>
   <div class="container">
