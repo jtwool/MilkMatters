@@ -32,12 +32,23 @@
   #nextmm {z-index:10;position:fixed;top:0;
            background-color:#4A286A;width:100%;
            border-bottom:1px solid #2BFAE5;}
+  .gallery {text-align: center;}
   </style>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link rel="icon" type="image/png" href="images/favicon.png">
-
+  <link rel="icon" type="image/png" href="images/favicon.png"/>
+  <!-- JS -->
+  <script type="text/javascript" src="path/to/instafeed.min.js"></script>
+  <script type="text/javascript">
+    var feed = new Instafeed({
+        get: 'tagged',
+        tagName: 'awesome',
+        clientId: 'YOUR_CLIENT_ID'
+    });
+    feed.run();
+  </script>
+      
 </head>
 <body>
 
@@ -57,6 +68,15 @@
       </div>
     </div>
     
+    <!-- Images -->
+    
+    <div class="row">
+      <div class="twelve columns">
+      <!-- Instafeed.js -->
+        <div id="instafeed"></div>
+      </div>
+    </div>
+    
     <!-- Schedule -->
     <div class="row">
       <div class="twelve columns">
@@ -66,7 +86,7 @@
         <p><strong>Morning gatherings</strong> are held at Banneker Community Center Playroom on the 3rd Floor. <a href="https://goo.gl/maps/xEkWaSfFatR2" target="_blank"> Banneker Community Center</a> is located at 930 W. 7th Street, at the NE corner of 7th & N. Elm. Street parking available or there is a lot 1.5 blocks north at 9th & Elm. It is also accessible by Bloomington Transit #3 bus line to 5th & Elm, 2 blocks. </p>
         
         <p><strong>Evening gatherings</strong> are held at City Hall in McCloskey Room 135. City Hall is located at <a href="https://goo.gl/maps/tQGhVUdfHuo" target="_blank">401 N. Morton Street</a>. There is free, lighted parking in lot. It is accessible by Bloomington Transit #2W bus line to Showers Complex.</p>
-        <div style="margin-left:15%;text-align:center;">
+        <div style="margin-left:10%;text-align:center;">
         <div style="float:left; margin-right:10%">
         <p><strong>The next 4 morning programs are:</strong><p>
           <ul>
