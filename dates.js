@@ -1,4 +1,4 @@
-YEAR = 2018
+YEAR = 2019
 var date_options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 // Dates go year, month, day
@@ -6,69 +6,73 @@ var date_options = { weekday: 'long', year: 'numeric', month: 'long', day: 'nume
 // So January = 0, February = 1 ... December = 11
 
 evening_dates = [
+// Dec 18
+new Date(2018, 11, 19),
 // January
-new Date(YEAR, 0, 17),
+new Date(YEAR, 0, 16),
 // February
-new Date(YEAR, 1, 21),
+new Date(YEAR, 1, 20),
 // March
-new Date(YEAR, 2, 21),
+new Date(YEAR, 2, 20),
 // April
-new Date(YEAR, 3, 18),
+new Date(YEAR, 3, 17),
 // May
-new Date(YEAR, 4, 16),
+new Date(YEAR, 4, 15),
 // June
-new Date(YEAR, 5, 20),
+new Date(YEAR, 5, 19),
 // July
-new Date(YEAR, 6, 18),
+new Date(YEAR, 6, 17),
 // August
-new Date(YEAR, 7, 15),
+new Date(YEAR, 7, 21),
 // September
-new Date(YEAR, 8, 19),
+new Date(YEAR, 8, 18),
 // October
-new Date(YEAR, 9, 17),
+new Date(YEAR, 9, 16),
 // November
-new Date(YEAR, 10, 21),
+new Date(YEAR, 10, 20),
 // December
-new Date(YEAR, 11, 19),
+new Date(YEAR, 11, 18),
 ]
 
 morning_dates = [
+// Dec 18
+new Date(2018, 11, 26),
 // January
-new Date(YEAR, 0, 10),
-new Date(YEAR, 0, 24),
+new Date(YEAR, 0, 9),
+new Date(YEAR, 0, 23),
 // February
-new Date(YEAR, 1, 14),
-new Date(YEAR, 1, 28),
+new Date(YEAR, 1, 13),
+new Date(YEAR, 1, 27),
 // March
-new Date(YEAR, 2, 14),
-new Date(YEAR, 2, 28),
+new Date(YEAR, 2, 13),
+new Date(YEAR, 2, 27),
 // April
-new Date(YEAR, 3, 11),
-new Date(YEAR, 3, 25),
+new Date(YEAR, 3, 10),
+new Date(YEAR, 3, 24),
 // May
-new Date(YEAR, 4, 13),
-new Date(YEAR, 4, 23),
+new Date(YEAR, 4, 8),
+new Date(YEAR, 4, 22),
 // June
-new Date(YEAR, 5, 9),
-new Date(YEAR, 5, 27),
+new Date(YEAR, 5, 12),
+new Date(YEAR, 5, 26),
 // July
-new Date(YEAR, 6, 11),
-new Date(YEAR, 6, 25),
+new Date(YEAR, 6, 10),
+new Date(YEAR, 6, 24),
 // August
-new Date(YEAR, 7, 8),
-new Date(YEAR, 7, 22),
+new Date(YEAR, 7, 14),
+new Date(YEAR, 7, 28),
 // September
-new Date(YEAR, 8, 12),
-new Date(YEAR, 8, 26),
+new Date(YEAR, 8, 11),
+new Date(YEAR, 8, 25),
 // October
-new Date(YEAR, 9, 10),
-new Date(YEAR, 9, 24),
+new Date(YEAR, 9, 9),
+new Date(YEAR, 9, 23),
 // November
-new Date(YEAR, 10, 14),
-new Date(YEAR, 10, 28),
+new Date(YEAR, 10, 13),
+new Date(YEAR, 10, 27),
 // December
-new Date(YEAR, 11, 12),
-new Date(YEAR, 11, 26),
+new Date(YEAR, 11, 11),
+// new Date(YEAR, 11, 26),
 ]
 
 today = new Date()
