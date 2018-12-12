@@ -36,6 +36,7 @@ new Date(YEAR, 11, 18),
 
 morning_dates = [
 // Dec 18
+new Date(2018, 11, 12),
 new Date(2018, 11, 26),
 // January
 new Date(YEAR, 0, 9),
