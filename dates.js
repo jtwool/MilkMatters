@@ -6,8 +6,6 @@ var date_options = { weekday: 'long', year: 'numeric', month: 'long', day: 'nume
 // So January = 0, February = 1 ... December = 11
 
 saturday_dates = [
-// January
-new Date(YEAR, 0, 16),
 // February
 new Date(YEAR, 1, 2),
 // March
@@ -33,8 +31,6 @@ new Date(YEAR, 11, 7),
 ]
 
 evening_dates = [
-// Dec 18
-new Date(2018, 11, 19),
 // January
 new Date(YEAR, 0, 16),
 // February
@@ -62,9 +58,6 @@ new Date(YEAR, 11, 18),
 ]
 
 morning_dates = [
-// Dec 18
-new Date(2018, 11, 12),
-new Date(2018, 11, 26),
 // January
 new Date(YEAR, 0, 9),
 new Date(YEAR, 0, 23),
@@ -103,9 +96,8 @@ new Date(YEAR, 11, 11),
 // new Date(YEAR, 11, 26),
 ]
 
-var get_next_days = function(x,n=4){
-  x.filter(y=>y>new Date()).slice(0,n);
-  return x
+var get_next_days = function(x){
+  return x.filter(y=>y>new Date()).slice(0,4);
 }
 
 next_four_saturday = get_next_days(saturday_dates)
@@ -116,12 +108,15 @@ first_next_days = [next_four_saturday[0],
                    next_four_mornings[0],
                    next_four_evenings[0]]
 
-if (next_four_evenings[0] ==  min(first_next_days)){
+var next_gathering = Math.min.apply(Math,
+                                         first_next_days)
+
+if (next_four_evenings[0].valueOf() ==  next_gathering){
   next_date = next_four_evenings[0]
-  next_loc = '<a href="https://goo.gl/maps/tQGhVUdfHuo" target="_blank">  City Hall in McCloskey Room 135</a> from 6:30pm-8pm'
-} else if (next_four_mornings[0] == min(first_next_days)){
+  next_loc = '<a href="https://goo.gl/maps/tQGhVUdfHuo" target="_blank">  City Hall in McCloskey Room 135</a> from 6:30-8pm'
+} else if (next_four_mornings[0].valueOf() == Math.min(next_gathering)){
   next_date = next_four_mornings[0]
-  next_loc= '<a href="https://goo.gl/maps/xEkWaSfFatR2" target="_blank">  Banneker Community Center</a> from 9:30am-11:30am'
+  next_loc= '<a href="https://goo.gl/maps/xEkWaSfFatR2" target="_blank">  Banneker Community Center</a> from 9:30-11:30am'
 }
   else{
     next_date = next_four_saturday[0]
