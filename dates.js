@@ -7,97 +7,96 @@ var date_options = { weekday: 'long', year: 'numeric', month: 'long', day: 'nume
 
 saturday_dates = [
 // February
-new Date(YEAR, 1, 2),
+new Date(YEAR, 1, 1),
 // March
-new Date(YEAR, 2, 2),
+new Date(YEAR, 2, 7),
 // April
-new Date(YEAR, 3, 6),
+new Date(YEAR, 3, 4),
 // May
-new Date(YEAR, 4, 4),
+new Date(YEAR, 4, 2),
 // June
-new Date(YEAR, 5, 1),
+new Date(YEAR, 5, 6),
 // July
-new Date(YEAR, 6, 6),
 // August
-new Date(YEAR, 7, 3),
+new Date(YEAR, 7, 1),
 // September
-new Date(YEAR, 8, 7),
+new Date(YEAR, 8, 5),
 // October
-new Date(YEAR, 9, 5),
+new Date(YEAR, 9, 3),
 // November
-new Date(YEAR, 10, 2),
+new Date(YEAR, 10, 7),
 // December
-new Date(YEAR, 11, 7),
+new Date(YEAR, 11, 5),
 ]
 
 evening_dates = [
 // January
-new Date(YEAR, 0, 16),
+new Date(YEAR, 0, 15),
 // February
-new Date(YEAR, 1, 20),
+new Date(YEAR, 1, 19),
 // March
-new Date(YEAR, 2, 20),
+new Date(YEAR, 2, 18),
 // April
-new Date(YEAR, 3, 17),
+new Date(YEAR, 3, 15),
 // May
-new Date(YEAR, 4, 15),
+new Date(YEAR, 4, 20),
 // June
-new Date(YEAR, 5, 19),
+new Date(YEAR, 5, 17),
 // July
-new Date(YEAR, 6, 17),
+new Date(YEAR, 6, 15),
 // August
-new Date(YEAR, 7, 21),
+new Date(YEAR, 7, 19),
 // September
-new Date(YEAR, 8, 18),
+new Date(YEAR, 8, 16),
 // October
-new Date(YEAR, 9, 16),
+new Date(YEAR, 9, 21),
 // November
-new Date(YEAR, 10, 20),
+new Date(YEAR, 10, 18),
 // December
-new Date(YEAR, 11, 18),
+new Date(YEAR, 11, 16),
 ]
 
 morning_dates = [
 // January
-new Date(YEAR, 0, 9),
-new Date(YEAR, 0, 23),
+new Date(YEAR, 0, 8),
+new Date(YEAR, 0, 22),
 // February
-new Date(YEAR, 1, 13),
-new Date(YEAR, 1, 27),
+new Date(YEAR, 1, 12),
+new Date(YEAR, 1, 26),
 // March
-new Date(YEAR, 2, 13),
-new Date(YEAR, 2, 27),
+new Date(YEAR, 2, 11),
+new Date(YEAR, 2, 25),
 // April
-new Date(YEAR, 3, 10),
-new Date(YEAR, 3, 24),
+new Date(YEAR, 3, 8),
+new Date(YEAR, 3, 22),
 // May
-new Date(YEAR, 4, 8),
-new Date(YEAR, 4, 22),
+new Date(YEAR, 4, 13),
+new Date(YEAR, 4, 27),
 // June
-new Date(YEAR, 5, 12),
-new Date(YEAR, 5, 26),
+new Date(YEAR, 5, 10),
+new Date(YEAR, 5, 24),
 // July
-new Date(YEAR, 6, 10),
-new Date(YEAR, 6, 24),
+new Date(YEAR, 6, 8),
+new Date(YEAR, 6, 22),
 // August
-new Date(YEAR, 7, 14),
-new Date(YEAR, 7, 28),
+new Date(YEAR, 7, 12),
+new Date(YEAR, 7, 26),
 // September
-new Date(YEAR, 8, 11),
-new Date(YEAR, 8, 25),
+new Date(YEAR, 8, 9),
+new Date(YEAR, 8, 23),
 // October
-new Date(YEAR, 9, 9),
-new Date(YEAR, 9, 23),
+new Date(YEAR, 9, 14),
+new Date(YEAR, 9, 28),
 // November
-new Date(YEAR, 10, 13),
-new Date(YEAR, 10, 27),
+new Date(YEAR, 10, 11),
+new Date(YEAR, 10, 25),
 // December
-new Date(YEAR, 11, 11),
-// new Date(YEAR, 11, 26),
+new Date(YEAR, 11, 9),
+new Date(YEAR, 11, 23)
 ]
 
 var get_next_days = function(x){
-  return x.filter(y=>y>new Date()).slice(0,4);
+  return x.filter(y=>y>=new Date()).slice(0,4);
 }
 
 next_four_saturday = get_next_days(saturday_dates)
