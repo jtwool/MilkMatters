@@ -1,4 +1,4 @@
-YEAR = 2019
+YEAR = 2020
 var date_options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
 // Dates go year, month, day
