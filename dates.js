@@ -95,8 +95,15 @@ new Date(YEAR, 11, 9),
 new Date(YEAR, 11, 23)
 ]
 
+var get_yesterday = function(){
+  today = new Date();
+  today.setDate(today.getDate()-1)
+  return today
+}
+
+
 var get_next_days = function(x){
-  return x.filter(y=>y>=new Date()).slice(0,4);
+  return x.filter(y=>y>get_yesterday()).slice(0,4);
 }
 
 next_four_saturday = get_next_days(saturday_dates)
