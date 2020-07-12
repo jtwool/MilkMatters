@@ -129,10 +129,9 @@ if (next_four_evenings[0].valueOf() ==  next_gathering){
     next_loc= '<a href="https://goo.gl/maps/LM4CWyKSKn92" target="_blank">  Crestmont Boys &amp; Girls Club</a> from 2:00-4:00pm'
   }
 
-nds = next_date.toLocaleDateString("en-US",date_options)
-
-document.getElementById("next_date").innerHTML = nds
-document.getElementById("next_loc").innerHTML = next_loc
+// nds = next_date.toLocaleDateString("en-US",date_options)
+// document.getElementById("next_date").innerHTML = nds
+// document.getElementById("next_loc").innerHTML = next_loc
 
 n4m = next_four_mornings.map(x=>"<li>"+ x.toLocaleDateString("en-US",date_options) + "</li>").join(" ")
 n4e = next_four_evenings.map(x=>"<li>"+ x.toLocaleDateString("en-US",date_options) + "</li>").join(" ")
